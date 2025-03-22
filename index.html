@@ -7,16 +7,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Boldonse&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Madimi+One&family=Marcellus&family=Merienda:wght@300..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Monomakh&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ 
     <title> 🕮 Book Recommendations </title>
     
 </head>
 <body>
-     <select id="options" name="options">
-            <option value="1"> English</option>
-            <option value="2">Portuguese</option>
-        </select>
+    <select id="options" name="options" onchange="location = this.value;">
+    <option value="index.html">English</option>
+    <option value="src/index-pt.html">Portuguese </option>
+  </select>
+
     <h1> Book recommendations
         <p>Powered by AI</p>
         <hr> </hr> 
@@ -29,7 +30,7 @@
               
     </h2>
         <button id="button">
-            <input type="text" id="input" placeholder="Enter your book recommendations">
+            <input type="text" id="input" placeholder="Pick your next books to read" required>
             <input type="submit" id="submit" value="submit">
              <div id="example">example: I like books with strong female protagonists,or books like Dune and Enders Game</div>
         </button>
@@ -47,13 +48,13 @@
       <a style= "color:white;" href="https://github.com/jadeeg" target="_blank">Jade Gonçalves</a> and
       is
       <a style= "color:white;" 
-        href=" "
+        href="https://github.com/jadeeg/AI-Book-Suggestions"
         target="_blank"
       >
         open-sourced on GitHub</a
       >
       and is
-      <a style= "color:white;" href=" " target="_blank"
+      <a style= "color:white;" href="https://bookrecommendationsai.netlify.app/" target="_blank"
         >hosted on Netlify</a
       >
     </footer>
