@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+import LoginForm from "./components/LoginForm.jsx";
+import  SearchPage from "./pages/SearchPage.jsx";
+import i18n from "./i18n.js";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Book recommendations </h1>
+      <p>Powered by AI</p>
+
+      <LoginForm />
+      <SearchPage />
     </div>
   );
+
 }
 
 export default App;

@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+#options {
+    font-size: medium;
+    border: none;
+    background-color:#fff;
+   position: absolute;
+    top:0;
+    right: 100px;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+   font-size: 18px;
+ }
+ #options:hover{
+    background-color: black;
+    color:#ffff;
+ }
+
+h1 {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  position: fixed;
+  margin-top: -100px;
+  background-color: #ffffff80;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 p {
+      font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  margin-top:-10px;
+  color:#373737;
 }
+hr {
+      border: none;
+      height: 2px; 
+      background-color:#6d676e; 
+      color:#6d676e;
+      margin-top:10px;
+    }
+    
+    
+h2  {font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ #images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin: 100px;
+   padding: 0;
+   margin-top: -50px;
+   justify-content: center;
+   
+ }
+  #button {
+    background-color: rgb(3, 3, 3);
+    display:block;
+    justify-content:center;
+   width: 250vh;
+    height: 50vh;
+    border-radius: 8px;
+
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+ #input {
+    border: none;
+    background-color: #000000;
+    color:#ffffff;
+     width: 400px;
+    font-size: 20px;
+    font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+ } 
+ #input:hover {
+    border: solid #ffffff;
+    color:#484848;
+    border-radius: 8px;
+ }
+ 
+ #submit {
+     width: 100px;
+     height: 30px;
+     font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+    color:#ffff;
+    background-color: #000000;
+    border-radius: 8px;
+ }
+ #submit:hover {
+    background-color:#ffff;
+    color: #000000;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ #text-info{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+     border:solid #f5f5f5 ;
+    text-align:center;
+    border-radius: 8px;
+    margin: 100px 100px;
+ }
+   
+  #example {
+    color: rgb(182, 177, 177);
+    font-size: 8px;
+    margin-top: 10px;
+    font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+    
   }
-  to {
-    transform: rotate(360deg);
+
+  footer  {
+    background-color: #000000;
+    width:600vh;
+     padding: 15px;
+    font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+   font-size: 12px;
+   color:#eeeded;
+    display: block;
+    justify-content: center;
   }
-}
+
+  
