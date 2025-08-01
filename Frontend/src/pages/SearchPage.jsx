@@ -1,9 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
+import "./Css/SearchPage.css";
 
-export default function SearchPage() {
+export default function SearchPage({ setResults }) {
   const [query, setQuery] = useState("");
-  const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -43,24 +43,25 @@ export default function SearchPage() {
   };
 
   return (
-    <div className="search-container">
-      <input
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Enter your search query"
-        className="search-input"
-      />
-      <button onClick={search} disabled={loading} className="search-button">
-        {loading ? "Searching..." : "Search"}
-      </button>
-      {error && <p className="error">{error}</p>}
-      <div className="results">
-        {results.map((item, index) => (
-          <div key={index} className="result-item">
-            {item}
-          </div>
-        ))}
+    <div>
+      <div className="search-container">
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Pick your next book"
+          className="input"
+          required
+        />
+        <button onClick={search} disabled={loading} className="button">
+          {loading ? "Searching..." : "Search"}{" "}
+        </button>
+
+        {error && <p className="error">{error}</p>}
+      </div>
+      <div className="example">
+        ex: Books with strong female protagonists, or books like Dune and Enders
+        Game
       </div>
     </div>
   );

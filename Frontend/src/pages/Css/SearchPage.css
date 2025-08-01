@@ -1,0 +1,49 @@
+
+
+
+ .input {
+    border: none;
+  background-color: black;
+    color:#ffffff;
+     width: 400px;
+    font-size: 20px;
+    font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+ } 
+ .input:hover {
+    border: solid #ffffff;
+    color:#484848;
+    border-radius: 8px;
+ }
+
+
+
+ .button {
+     width: 100px;
+     height: 30px;
+     font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+    color:#ffff;
+    background-color: #000000;
+    border-radius: 8px;
+ }
+ .button:hover {
+    background-color:#ffff;
+    color: #000000;
+ }
+
+
+ .search-container {
+   color:white;
+   display: flex;
+ }
+
+ .example {
+   font-size: 10px;
+   color: #ffff;
+
+ }
