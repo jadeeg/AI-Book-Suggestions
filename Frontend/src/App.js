@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import LoginForm from "./components/LoginForm.jsx";
-import  SearchPage from "./pages/SearchPage.jsx";
+
 import i18n from "./i18n.js";
 import  "./App.css";
 import Home from "./pages/Home.jsx";
@@ -12,12 +12,13 @@ function App() {
         {" "}
         Book recommendations
         <p>Powered by AI</p>
-        
       </h1>
+      <h2>
+        
+        <LoginForm />
+      </h2>
+
       <Home />
-      
-      <LoginForm />
- 
     </div>
   );
 
