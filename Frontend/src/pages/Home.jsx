@@ -1,17 +1,19 @@
+import { useTranslation } from "react-i18next";
 import "./Css/Home.css";
 import SearchPage from "./SearchPage.jsx";
 import { useState } from "react";
 
+
 export default function Home() {
   const [results, setResults] = useState([]);
+  const { t } = useTranslation();
 
   return (
     <div>
       <div className="text-info">
         <div>
           <h2>
-            <strong>AI Reads Your Mind:
-              <p> Your Personalized Reading List </p> </strong>
+            <strong>{t("aiReads")}</strong>
           </h2>
           <div className="description-results">
             {results.length === 0 ? (
