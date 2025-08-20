@@ -1,7 +1,7 @@
 
 import './App.css';
 import LoginForm from "./components/LoginForm.jsx";
-import i18n from "./i18n.js";
+
 import  "./App.css";
 import Home from "./pages/Home.jsx";
 function App() {
