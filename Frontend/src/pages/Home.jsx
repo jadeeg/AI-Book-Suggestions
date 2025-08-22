@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+
 import "./Css/Home.css";
 import SearchPage from "./SearchPage.jsx";
 import { useState } from "react";
@@ -6,14 +6,14 @@ import { useState } from "react";
 
 export default function Home() {
   const [results, setResults] = useState([]);
-  const { t } = useTranslation();
+  
 
   return (
     <div>
       <div className="text-info">
         <div>
           <h2>
-            <strong>{t("aiReads")}</strong>
+            <strong>{("aiReads")}</strong>
           </h2>
           <div className="description-results">
             {results.length === 0 ? (
