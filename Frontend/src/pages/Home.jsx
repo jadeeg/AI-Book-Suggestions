@@ -13,7 +13,7 @@ export default function Home() {
       <div className="text-info">
         <div>
           <h2>
-            <strong>{("aiReads")}</strong>
+            <strong> AI Reads Your Mind: <p></p>Your Personalized Reading List </strong>
           </h2>
           <div className="description-results">
             {results.length === 0 ? (
